@@ -18,7 +18,7 @@ $ npm install
 
 ### Setup
 
-`env_sample`を`.env`にコピーし、
+`env_sample`を`.env`にコピーし、  
 `TWITTER_ACCOUNT`と`TWITTER_PASSWORD`にログイン情報を記載。
 
 ```
@@ -50,7 +50,7 @@ LOOP_MODE=disable
 $ npm run main
 ```
 
-実行すると、`output/`配下にファイルを出力する。
+実行すると、`output/`配下にファイルを出力する。  
 また、`log`にログファイルも出力する。
 
 ## 確認環境
@@ -60,6 +60,14 @@ $ npm run main
 - maxOS: 10.14.6(Mojave)
 - Node.js: 11.9.0
 - puppeteer: 1.20.0
+
+## 注意事項
+
+- headless で実行しません。（headless の場合、削除できない場合があるため)
+- 上記の環境のみでしか確認してません。
+- 自動削除は、失敗することがあります(ブラウザ上でも正常に削除されない場合がある)
+- Twitter 自体にエラーが発生した場合の対処はしていません。
+  - LOOP_MODE を有効にするなど、すべてエクスポートできるまでくり返し実行ください。
 
 ## Author
 
