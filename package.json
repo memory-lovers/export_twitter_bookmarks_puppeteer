@@ -4,6 +4,7 @@
   "description": "Twitter Bookmark Export Tool using Puppeteer",
   "main": "index.js",
   "scripts": {
+    "main": "node index.js 2>&1 | tee log/tbe_`date '+%Y%m%d_%H%M%S'`.log",
     "test": "test"
   },
   "repository": {
@@ -19,5 +20,10 @@
   "bugs": {
     "url": "https://github.com/memory-lovers/export_twitter_bookmarks_puppeteer/issues"
   },
-  "homepage": "https://github.com/memory-lovers/export_twitter_bookmarks_puppeteer#readme"
+  "homepage": "https://github.com/memory-lovers/export_twitter_bookmarks_puppeteer#readme",
+  "dependencies": {
+    "dayjs": "^1.8.16",
+    "dotenv": "^8.1.0",
+    "puppeteer": "^1.20.0"
+  }
 }
