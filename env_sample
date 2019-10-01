@@ -1,0 +1,9 @@
+# Copy this file with file name '.env' and set your login info.
+TWITTER_ACCOUNT=YOUR_TWITTER_ACCOUNT
+TWITTER_PASSWORD=YOUR_TWITTER_PASSWORD
+
+### DELETE_MODE: "enable" or "disable"
+DELETE_MODE=disable
+
+### LOOP_MODE: "enable" or "disable"
+LOOP_MODE=disable
